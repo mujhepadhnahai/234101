@@ -1,0 +1,19 @@
+asgb2
+
+13. Positions on a chess board are identified by a letter and a number. The letter identifies the column,
+while the number identifies the row, as shown below:
+Write a program that reads a position from the user and identify the proper color of the respective
+box.
+
+Create a function that returns all the unique permutations of a given string.
+
+11. Create a function that determines whether a string can be rearranged to form a palindrome.
+
+Write a program that converts a Roman numeral to its integer equivalent.
+
+28. Write a function that takes a string of lowercase alphabets as inputs and gives an output by shifting
+them by one letter ahead. Note that if the string has ’z’, then it will be treated as ’a’. Example: python
+7→ qzuipo, pythonzabc 7→ qzuipobbcd.
+
+27. Write a function that takes a positive number as an input and converts the respective digits into 
+corresponding text. Example: 85 7→ eight five, 123 7→ one two three.
