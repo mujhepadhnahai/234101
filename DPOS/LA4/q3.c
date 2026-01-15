@@ -2,6 +2,9 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+// first chield copy content of file 1 to file 2,
+// second child will display content of file 2
+// 3rd will display sorted content of file 2 in reverse __ORDER_
 
 int main(){
     if(vfork()==0){
