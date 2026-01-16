@@ -1,0 +1,18 @@
+for (ri,rv) in df.items():
+    print('col index= ::',ri)
+    print('col value ::')
+    print(rv)
+
+for (ri,rv) in df.iterrows():
+    print('row index= ::',ri)
+    print('row value ::')
+    print(rv)
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0,10,100)
+y = np.sin(x)
+plt.plot(x,y)

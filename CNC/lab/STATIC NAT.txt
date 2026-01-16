@@ -1,0 +1,22 @@
+STATIC NAT
+ip nat inside/outside
+ip nat inside source static {pc1 ip} {one ip of server subnet}
+show ip nat translations
+
+DYNAMIC
+access-list 1 permit 192.168.1.0 0.0.0.255
+ip nat pool NATPOOL 10.0.0.2 10.0.0.6 netmask 255.0.0.0
+ip nat inside source list 1 pool NATPOOL
+
+PAT
+access-list 1 permit 192.168.1.0 0.0.0.255
+ip nat inside source list 1 interface gig0/0 overload
+
+
+ROUTER DHCP (CLI)
+ip dhcp excluded-address 192.168.1.1 192.168.1.10
+ip dhcp pool LAN
+network 192.168.1.0 255.255.255.0
+default-router 192.168.1.1
+dns-server 8.8.8.8
+
