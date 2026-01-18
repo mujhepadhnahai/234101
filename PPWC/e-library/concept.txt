@@ -1,0 +1,17 @@
+============================Read,write.. file==========================================
+
+ssize_t read(int fildes, void *buf, size_t nbyte);
+
+ssize_t write(int fildes, const void *buf, size_t nbyte);
+
+The symbolic names for the file descriptors that repre-
+sent standard input, standard output and standard error are
+STDIN_FILENO, STDOUT_FILENO and STDERR_FILENO,
+respectively. These symbolic names are defined in unistd.h.
+
+O_EXCL: If you want to avoid writing over an existing file, use the combination O_CREAT
+| O_EXCL. This combination returns an error if the file already exists.
+O_NOCTTY: The O_NOCTTY flag prevents an opened device from becoming a con-
+trolling terminal.
+O_NONBLOCK: The O_NONBLOCK flag controls whether the open() returns imme-
+diately or blocks until the device is ready.
